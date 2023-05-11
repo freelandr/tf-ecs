@@ -5,3 +5,7 @@ output "aws_account" {
 output "available_AZs" {
   value = data.aws_availability_zones.available.names
 }
+
+output "url" {
+  value = "http://${module.alb.lb_dns_name}" 
+}

@@ -4,6 +4,7 @@ const app = express()
 
 app.get('/', (_req, res) => {
  res.send(`
+  Deploying a change...
   This "Hello world!" is powered by Terraform AWS Modules!
   The ISO datetime right now is ${new Date().toISOString()}.
  `)
